@@ -10,7 +10,7 @@ export default {
 </script>
 
 <template>
-  <main class="flex flex-col lg:flex-row justify-center py-8 mx-4">
+  <main class="z-10 flex flex-col lg:flex-row justify-center py-8 mx-4 bg-[#16161C]">
 
     <div class="lg:mr-10">
       <Card cardId="one" />

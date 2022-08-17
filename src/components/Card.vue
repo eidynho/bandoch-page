@@ -48,7 +48,7 @@ export default {
 <template>
   <div 
     @mouseover="showCardViewProject = true"
-    class="relative mt-36 rounded-3xl bg-blue-200 max-w-3xl mx-auto cardDimensions cursor-pointer hover:brightness-75"
+    class="z-10 relative mt-36 rounded-3xl bg-blue-200 max-w-3xl mx-auto cardDimensions cursor-pointer hover:brightness-75"
     style="transition-duration: 800ms;"
   >
     <div v-show="showCardViewProject" :id="`${cardId}animationCardViewProject`" class="marquee absolute w-full h-full flex items-center justify-center text-white overflow-hidden">

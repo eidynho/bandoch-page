@@ -4,7 +4,7 @@
   export default {
     mounted() {
       const tl = gsap.timeline()
-      tl.fromTo('#headerTitle', {
+      tl.fromTo('#footerTitle', {
         y: 60,
         opacity: 0,
         stagger: {
@@ -26,7 +26,10 @@
 </script>
 
 <template>
-  <header class="z-10 flex justify-between py-8 mx-4 bg-[#16161C]">
-    <h1 id="headerTitle" class="mt-4 ml-0 w-4/5 text-6xl md:mt-12 md:ml-auto md:text-7xl lg:text-8xl" >Nerissa está ao vivo agora</h1>
-  </header>
+  <footer class="fixed flex justify-center items-center h-full w-full bottom-0">
+    <div class="flex justify-between items-center w-[80%] -mt-72">
+      <span class="text-[#16161C]">imagem</span>
+      <h2 id="footerTitle" class=" text-6xl w-1/2 font-bold text-[#16161C]" >Nerissa está ao vivo agora</h2>
+    </div>
+  </footer>
 </template>

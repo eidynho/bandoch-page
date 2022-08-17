@@ -1,10 +1,28 @@
 @font-face {
   font-family: "Poppins";
+  font-weight: 300;
+  font-style: light;
+  font-display: auto;
+  unicode-range: U+000-5FF;
+  src: local("Poppins"), url("/fonts/Poppins/Poppins-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Poppins";
   font-weight: 400;
   font-style: normal;
   font-display: auto;
   unicode-range: U+000-5FF;
   src: local("Poppins"), url("/fonts/Poppins/Poppins-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-weight: 700;
+  font-style: bold;
+  font-display: auto;
+  unicode-range: U+000-5FF;
+  src: local("Poppins"), url("/fonts/Poppins/Poppins-Bold.woff") format("woff");
 }
 
 :root {
@@ -13,7 +31,6 @@
   line-height: 24px;
   font-weight: 400;
 
-  color-scheme: light dark;
   color: #EEEAEA;
   background-color: #16161C;
 
