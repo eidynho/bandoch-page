@@ -31,5 +31,28 @@
       <span class="text-[#16161C]">imagem</span>
       <h2 id="footerTitle" class=" text-6xl w-1/2 font-bold text-[#16161C]" >Nerissa está ao vivo agora</h2>
     </div>
+
+    <div class="marquee absolute mt-auto w-full h-full flex items-end text-white overflow-hidden">
+      <div>
+        <span class="text-8xl w-full whitespace-nowrap text-[#16161C]">{{'MB '.repeat(40)}}</span>
+      </div>
+    </div>
   </footer>
 </template>
+
+<style scoped lang="scss">
+.marquee div {
+  position: absolute;
+  width: 200%;
+
+  animation: marquee 24s linear infinite;
+}
+.marquee span {
+  width: 100%;
+}
+
+@keyframes marquee {
+  0% { left: 0%; }
+  100% { left: -100%; }
+}
+</style>

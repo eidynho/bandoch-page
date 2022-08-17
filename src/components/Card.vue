@@ -67,7 +67,6 @@ export default {
 
 
 <style scoped lang="scss">
-
 .cardDimensions {
   width: 100%;
   height: 700px;
