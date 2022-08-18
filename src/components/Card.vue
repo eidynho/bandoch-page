@@ -3,7 +3,12 @@ import gsap from 'gsap'
 
 export default {
   props: {
-    cardId: String,
+    id: String,
+    img: String,
+    imgAlt: String,
+    title: String,
+    tags: String,
+    isWhite: Boolean,
   },
   data() {
     return {
@@ -20,8 +25,8 @@ export default {
   },
   watch: {
     showCardViewProject() {
-      gsap.utils.toArray(`#${this.cardId}animationCardViewProject`).forEach(animation => {
-        let hover = gsap.fromTo(`#${this.cardId}animationCardViewProject`, {
+      gsap.utils.toArray(`#${this.id}animationCardViewProject`).forEach(animation => {
+        let hover = gsap.fromTo(`#${this.id}animationCardViewProject`, {
           y: 60,
           opacity: 0,
           stagger: {
@@ -48,20 +53,20 @@ export default {
 <template>
   <div 
     @mouseover="showCardViewProject = true"
-    class="z-10 relative mt-36 rounded-3xl bg-blue-200 max-w-3xl mx-auto cardDimensions cursor-pointer hover:brightness-75"
+    class="z-10 relative mt-36 rounded-3xl max-w-3xl mx-auto cardDimensions cursor-pointer hover:brightness-75"
     style="transition-duration: 800ms;"
   >
-    <div v-show="showCardViewProject" :id="`${cardId}animationCardViewProject`" class="marquee absolute w-full h-full flex items-center justify-center text-white overflow-hidden">
+    <div v-show="showCardViewProject" :id="`${id}animationCardViewProject`" class="marquee absolute w-full h-full flex items-center justify-center overflow-hidden" :class="isWhite ? 'text-black' : 'text-white' ">
       <div>
-        <span class="text-6xl w-full whitespace-nowrap">View Project - View Project - View Project - View Project - View Project - View Project</span>
+        <span class="text-7xl w-full whitespace-nowrap">View Project - View Project - View Project - View Project - View Project - View Project</span>
       </div>
     </div>
+    <img :src="img" :alt="imgAlt" class="w-full h-full rounded-3xl">
 
-    card
   </div>
   <div class="flex justify-between items-center mt-3 max-w-3xl mx-auto">
-    <h6 class="text-3xl ml-1 mr-2">Título card</h6>
-    <span class="text-md uppercase tracking-wider">Design - brand</span>
+    <h6 class="text-3xl ml-1 mr-2">{{ title }}</h6>
+    <span class="text-md uppercase tracking-wider">{{ tags }}</span>
   </div>
 </template>
 
@@ -69,25 +74,16 @@ export default {
 <style scoped lang="scss">
 .cardDimensions {
   width: 100%;
-  height: 700px;
 
   @media(min-width: 1024px) {
     width: 460px;
-    height: 560px;
+    height: 651px;
   }
 
   @media(min-width: 1380px) {
     width: 630px;
-    height: 750px;
+    height: 891px;
   }
-}
-.cardDimensionsMd {
-  width: 460px;
-  height: 560px;
-}
-.cardDimensionsLg {
-  width: 630px;
-  height: 750px;
 }
 
 .marquee div {
