@@ -25,6 +25,16 @@
   src: local("Poppins"), url("/fonts/Poppins/Poppins-Bold.woff") format("woff");
 }
 
+@font-face {
+  font-family: "DynaPuff";
+  font-weight: 700;
+  font-style: bold;
+  font-display: auto;
+  unicode-range: U+000-5FF;
+  src: local("DynaPuff"), url("/fonts/DynaPuff/DynaPuff-Bold.woff") format("woff");
+}
+
+
 :root {
   font-family: Poppins, Arial, sans-serif;
   font-size: 16px;

@@ -3,8 +3,7 @@
 
   export default {
     mounted() {
-      const tl = gsap.timeline()
-      tl.fromTo('#footerTitle', {
+      gsap.fromTo('#footerTitle', {
         y: 60,
         opacity: 0,
         stagger: {
@@ -21,20 +20,33 @@
         }
       })
 
+      // Opacity animation 
+      gsap.fromTo('footerComponent', {
+        opacity: 0,
+        scrollTrigger: {
+          trigger: '.footerComponent',
+          start: 'bottom bottom',
+          end: 'bottom top',
+          scrub: true
+        }
+      }, {
+        opacity: 1,
+      })
+
     },
   }
 </script>
 
 <template>
-  <footer class="fixed flex justify-center items-center h-full w-full bottom-0">
+  <footer id="footerComponent" class="fixed flex justify-center items-center h-full w-full bottom-0">
     <div class="flex justify-between items-center w-[80%] -mt-72">
       <span class="text-[#16161C]">imagem</span>
       <h2 id="footerTitle" class=" text-6xl w-1/2 font-bold text-[#16161C]" >Nerissa está ao vivo agora</h2>
     </div>
 
-    <div class="marquee absolute mt-auto w-full h-full flex items-end text-white overflow-hidden">
+    <div class="marquee absolute mt-auto w-full h-full flex items-end text-white overflow-hidden mb-8">
       <div>
-        <span class="text-8xl w-full whitespace-nowrap text-[#16161C]">{{'MB '.repeat(40)}}</span>
+        <span class="font-[DynaPuff] font-bold text-[160px] w-full whitespace-nowrap text-[#16161C] cursor-default select-none">{{'MB '.repeat(40)}}</span>
       </div>
     </div>
   </footer>
