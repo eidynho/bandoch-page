@@ -9,10 +9,16 @@
     </div>
 
     <div class="marquee absolute mt-auto w-full h-full flex items-end text-white overflow-hidden mb-8">
-      <div>
+      <div class="pt-16 border-t border-[#16161C]">
         <span class="font-[DynaPuff] font-bold text-[160px] w-full whitespace-nowrap text-[#16161C] cursor-default select-none">{{'MB '.repeat(40)}}</span>
       </div>
     </div>
+
+    <!-- Circle -->
+    <div class="fixed top-0 -left-[20%] w-[800px] h-[800px] border border-[#16161C] rounded-full opacity-60">
+
+    </div>
+
   </footer>
 </template>
 
