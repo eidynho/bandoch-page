@@ -8,32 +8,24 @@ export default {
     imgAlt: String,
     title: String,
     tags: String,
-    isWhite: Boolean,
+    isWhite: String,
   },
   data() {
     return {
       showCardViewProject: false,
     }
   },
-  methods: {
-    mouseOverCard() {
-      setTimeout(this.showCardViewProject = true, 6000)
-    },
-    mouseLeaveCard() {
-      setTimeout(this.showCardViewProject = false, 6000)
-    }
-  },
   watch: {
     showCardViewProject() {
       gsap.utils.toArray(`#${this.id}animationCardViewProject`).forEach(animation => {
         let hover = gsap.fromTo(`#${this.id}animationCardViewProject`, {
-          y: 60,
+          y: 80,
           opacity: 0,
           stagger: {
             amount: 0.3
           }
         }, {
-          y: 0,
+          y: 20,
           duration: 0.4,
           delay: 0,
           opacity: 1,
@@ -56,9 +48,9 @@ export default {
     class="z-10 relative mt-36 rounded-3xl max-w-3xl mx-auto cardDimensions cursor-pointer hover:brightness-75"
     style="transition-duration: 800ms;"
   >
-    <div v-show="showCardViewProject" :id="`${id}animationCardViewProject`" class="marquee absolute w-full h-full flex items-center justify-center overflow-hidden" :class="isWhite ? 'text-black' : 'text-white' ">
+    <div v-show="showCardViewProject" :id="`${id}animationCardViewProject`" class="marquee absolute rounded-3xl w-full h-[94%] flex items-center justify-center overflow-hidden" :class="isWhite ? 'text-black' : 'text-white' ">
       <div>
-        <span class="text-7xl w-full whitespace-nowrap">View Project - View Project - View Project - View Project - View Project - View Project</span>
+        <span class="text-6xl w-full whitespace-nowrap">View Project - View Project - View Project - View Project - View Project - View Project</span>
       </div>
     </div>
     <img :src="img" :alt="imgAlt" class="w-full h-full rounded-3xl">
