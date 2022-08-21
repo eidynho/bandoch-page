@@ -42,11 +42,11 @@
           lg:max-w-[240px]
           lg:top-[200px] lg:left-[-20px] lg:absolute
           xl:top-[240px] xl:left-[80px]
-          " viewBox="0 0 155 155" style="transform: rotate(0)">
+          " viewBox="0 0 164 164" style="transform: rotate(0)">
           <path fill="transparent" id="curve" d="M 80, 80 m -75, 0 a 75,75 0 1,0 150,0 a 75,75 0 1,0 -150,0"/>
-          <text class="fill-[#EEEAEA] tracking-[4px]">
+          <text class="fill-[#EEEAEA] tracking-[7.5px]">
             <textPath alignment-baseline="top" xlink:href="#curve">
-              {{ ('Feito por miguel • ').repeat(8) }}
+              {{ ('Made by eidy • ').repeat(2) }}
             </textPath>
           </text>
         </svg>
