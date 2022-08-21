@@ -34,6 +34,28 @@
   src: local("DynaPuff"), url("/fonts/DynaPuff/DynaPuff-Bold.woff") format("woff");
 }
 
+::selection {
+  background-color: #E05263;
+}
+
+::-webkit-scrollbar {
+  width: 0.6em;
+  height: 0.6em;
+  background: transparent;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888888;
+  border-radius: 99px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555555;
+}
 
 :root {
   font-family: Poppins, Arial, sans-serif;
