@@ -88,10 +88,10 @@
   }
 }
 .rotating {
-  -webkit-animation: rotating 8s linear infinite;
-  -moz-animation: rotating 8s linear infinite;
-  -ms-animation: rotating 8s linear infinite;
-  -o-animation: rotating 8s linear infinite;
-  animation: rotating 8s linear infinite;
+  -webkit-animation: rotating 12s linear infinite;
+  -moz-animation: rotating 12s linear infinite;
+  -ms-animation: rotating 12s linear infinite;
+  -o-animation: rotating 12s linear infinite;
+  animation: rotating 12s linear infinite;
 }
 </style>
