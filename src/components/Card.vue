@@ -50,7 +50,7 @@ export default {
   >
     <div v-show="showCardViewProject" :id="`${id}animationCardViewProject`" class="marquee absolute rounded-3xl w-full h-[94%] flex items-center justify-center overflow-hidden" :class="isWhite ? 'text-black' : 'text-white' ">
       <div>
-        <span class="text-6xl w-full whitespace-nowrap">View Project - View Project - View Project - View Project - View Project - View Project</span>
+        <span class="text-6xl w-full whitespace-nowrap font-normal">View Project - View Project - View Project - View Project - View Project - View Project</span>
       </div>
     </div>
     <img :src="img" :alt="imgAlt" class="w-full h-full rounded-3xl">
