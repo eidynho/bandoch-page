@@ -1,85 +1,83 @@
 @font-face {
-  font-family: "Poppins";
-  font-weight: 300;
-  font-style: light;
-  font-display: auto;
-  unicode-range: U+000-5FF;
-  src: local("Poppins"), url("/fonts/Poppins/Poppins-Light.woff") format("woff");
+	font-family: "Poppins";
+	font-weight: 300;
+	font-style: light;
+	font-display: auto;
+	unicode-range: U+000-5FF;
+	src: local("Poppins"), url("/fonts/Poppins/Poppins-Light.woff") format("woff");
 }
 
 @font-face {
-  font-family: "Poppins";
-  font-weight: 400;
-  font-style: normal;
-  font-display: auto;
-  unicode-range: U+000-5FF;
-  src: local("Poppins"), url("/fonts/Poppins/Poppins-Regular.woff") format("woff");
+	font-family: "Poppins";
+	font-weight: 400;
+	font-style: normal;
+	font-display: auto;
+	unicode-range: U+000-5FF;
+	src: local("Poppins"), url("/fonts/Poppins/Poppins-Regular.woff") format("woff");
 }
 
 @font-face {
-  font-family: "Poppins";
-  font-weight: 700;
-  font-style: bold;
-  font-display: auto;
-  unicode-range: U+000-5FF;
-  src: local("Poppins"), url("/fonts/Poppins/Poppins-Bold.woff") format("woff");
+	font-family: "Poppins";
+	font-weight: 700;
+	font-style: bold;
+	font-display: auto;
+	unicode-range: U+000-5FF;
+	src: local("Poppins"), url("/fonts/Poppins/Poppins-Bold.woff") format("woff");
 }
 
 @font-face {
-  font-family: "DynaPuff";
-  font-weight: 700;
-  font-style: bold;
-  font-display: auto;
-  unicode-range: U+000-5FF;
-  src: local("DynaPuff"), url("/fonts/DynaPuff/DynaPuff-Bold.woff") format("woff");
+	font-family: "DynaPuff";
+	font-weight: 700;
+	font-style: bold;
+	font-display: auto;
+	unicode-range: U+000-5FF;
+	src: local("DynaPuff"), url("/fonts/DynaPuff/DynaPuff-Bold.woff") format("woff");
 }
 
 ::selection {
-  background-color: #E05263;
+	background-color: #E05263;
 }
 
 ::-webkit-scrollbar {
-  width: 0.6em;
-  height: 0.6em;
-  background: transparent;
+	width: 0.6em;
+	height: 0.6em;
+	background: transparent;
 }
 
 ::-webkit-scrollbar-track {
-  background: transparent;
+	background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #888888;
-  border-radius: 99px;
+	background: #888888;
+	border-radius: 99px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #555555;
+	background: #555555;
 }
 
 :root {
-  font-family: Poppins, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
+	font-family: Poppins, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
 
-  color: #EEEAEA;
-  background-color: #16161C;
+	color: #EEEAEA;
+	background-color: #16161C;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: 100%;
 }
 
 a {
-  font-weight: 700;
-  color: #FFF;
-  text-decoration: none;
-  cursor: pointer;
+	font-weight: 700;
+	color: #FFF;
+	text-decoration: none;
+	cursor: pointer;
 
-  :hover {
-    
-  }
+	:hover {}
 }
