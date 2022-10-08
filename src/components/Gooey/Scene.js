@@ -14,7 +14,7 @@ export default class Scene {
 			alpha: true
 		})
 
-		this.renderer.setSize(window.innerWidth/1.08, window.innerHeight/1.08)
+		this.renderer.setSize(window.innerWidth / 1.08, window.innerHeight / 1.08)
 		this.renderer.setPixelRatio(window.devicePixelRatio)
 
 		this.initLights()
@@ -22,7 +22,7 @@ export default class Scene {
 	}
 
 	initCamera() {
-		const fov =	(180 * (2 * Math.atan(window.innerHeight / 2 / perspective))) / Math.PI
+		const fov = (180 * (2 * Math.atan(window.innerHeight / 2 / perspective))) / Math.PI
 		this.camera = new THREE.PerspectiveCamera(fov, window.innerWidth / window.innerHeight, 1, 10000)
 		this.camera.position.set(0, 0, perspective)
 	}
@@ -33,7 +33,7 @@ export default class Scene {
 	}
 
 
-	
+
 	onResize() {
 		this.W = window.innerWidth
 		this.H = window.innerHeight
@@ -45,10 +45,10 @@ export default class Scene {
 	}
 
 	onToggleView({ target, open }) {
-			this.activeTile = target // !== undefined ? target : this.activeTile
+		this.activeTile = target // !== undefined ? target : this.activeTile
 
-			ev('lockScroll', { lock: open })
-			ev('tile:zoom', { tile: this.activeTile, open })
+		ev('lockScroll', { lock: open })
+		ev('tile:zoom', { tile: this.activeTile, open })
 	}
 
 
