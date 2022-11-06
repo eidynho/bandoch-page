@@ -103,7 +103,7 @@ export default {
 		</div>
 
 		<!-- principal image -->
-		<div class="z-10 relative mt-12 max-w-xl mx-auto cardDimensions">
+		<div class="cardDimensions mt-12 max-w-xl mx-auto">
 			<img :src="cardImage" :alt="imageAlt" class="w-full h-full rounded-3xl">
 		</div>
 

@@ -16,15 +16,15 @@ export default {
 	},
 	mounted() {
 		gsap.registerPlugin(ScrollTrigger)
-		gsap.to('#footerComponent', {
-			opacity: 0.9,
-			scrollTrigger: {
-				trigger: '#sectionComponent',
-				start: 'bottom bottom',
-				end: 'bottom top',
-				scrub: true,
-			}
-		})
+		// gsap.to('#footerComponent', {
+		// 	opacity: 0.9,
+		// 	scrollTrigger: {
+		// 		trigger: '#sectionComponent',
+		// 		start: 'bottom bottom',
+		// 		end: 'bottom top',
+		// 		scrub: true,
+		// 	}
+		// })
 
 	}
 }
@@ -36,8 +36,8 @@ export default {
 		<Main />
 		<Section id="sectionComponent" />
 	</div>
-	<div class="w-full h-[100vh] bg-[#EEEAEA]">
+	<!-- <div class="w-full h-[100vh] bg-[#EEEAEA]">
 		<Footer id="footerComponent" style="opacity: 0;" />
-	</div>
+	</div> -->
 </template>
 

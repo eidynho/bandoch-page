@@ -28,7 +28,7 @@ export default {
 </script>
 
 <template>
-	<header id="headerComponent" class="h-[80vh] container flex items-center z-10 mx-auto lg:-mt-8 xl:mt-0">
+	<header id="headerComponent" class="h-[80vh] container flex items-center mx-auto lg:-mt-8 xl:mt-0">
 		<div
 			class="relative w-[90%] flex flex-col justify-center items-center gap-16 mx-auto mt-20 max-w-[1200px] lg:gap-0 lg:items-stretch xl:w-full">
 			<h1 id="headerTitle"
@@ -40,11 +40,11 @@ export default {
 
 			<div class="relative lg:static w-full h-full flex justify-center">
 				<svg class="rotating
-          max-w-[200px]
-          lg:max-w-[240px]
-          lg:top-[200px] lg:left-[-20px] lg:absolute
-          xl:top-[240px] xl:left-[80px]
-          " viewBox="0 0 164 164" style="transform: rotate(0)">
+					max-w-[200px]
+					lg:max-w-[240px] lg:top-[200px] lg:left-[-20px] lg:absolute
+					xl:top-[240px] xl:left-[80px]" 
+					viewBox="0 0 164 164" style="transform: rotate(0)"
+				>
 					<path fill="transparent" id="curve"
 						d="M 80, 80 m -75, 0 a 75,75 0 1,0 150,0 a 75,75 0 1,0 -150,0" />
 					<text class="fill-[#EEEAEA] tracking-[7.5px]">

@@ -44,15 +44,15 @@ export default {
 
 <template>
 	<div @mouseover="showCardViewProject = true"
-		class="z-10 relative mt-36 rounded-3xl max-w-3xl mx-auto cardDimensions cursor-pointer hover:brightness-75"
+		class="relative mt-36 rounded-3xl max-w-3xl mx-auto cardDimensions cursor-pointer hover:brightness-75"
 		style="transition-duration: 800ms;">
 		<div v-show="showCardViewProject" :id="`${id}animationCardViewProject`"
 			class="marquee absolute rounded-3xl w-full h-[94%] flex items-center justify-center overflow-hidden"
 			:class="isWhite ? 'text-black' : 'text-white' ">
 			<div>
-				<span class="text-6xl w-full whitespace-nowrap font-normal">View Project - View Project - View Project -
-					View
-					Project - View Project - View Project</span>
+				<span class="text-6xl w-full whitespace-nowrap font-normal">
+					View Project - View Project - View Project - View Project - View Project - View Project
+				</span>
 			</div>
 		</div>
 		<img :src="img" :alt="imgAlt" class="w-full h-full rounded-3xl">

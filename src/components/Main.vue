@@ -23,7 +23,7 @@ export default {
 </script>
 
 <template>
-	<main class="z-10 flex flex-col lg:flex-row justify-center py-8 mx-4 lg:mx-0 bg-[#16161C]">
+	<main class="flex flex-col lg:flex-row justify-center py-8 mx-4 lg:mx-0 bg-[#16161C]">
 
 		<div class="lg:mr-10">
 			<router-link to="/cards/hxh">
