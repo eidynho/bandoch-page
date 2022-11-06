@@ -26,22 +26,22 @@ export default {
 			imageAlt: '',
 		}
 	},
-	created() {
-		let timer = null
-		window.addEventListener("resize", () => {
-			clearTimeout(timer)
+	// created() {
+	// 	let timer = null
+	// 	window.addEventListener("resize", () => {
+	// 		clearTimeout(timer)
 
-			const canvaEl = document.querySelector('.canva-card-details')
-			canvaEl.style.filter = 'blur(10px)'
+	// 		const canvaEl = document.querySelector('.canva-card-details')
+	// 		canvaEl.style.filter = 'blur(10px)'
 
 
-			timer = setTimeout(function () {
-				window.scene = new Scene()
-				canvaEl.style.filter = 'blur(0px)'
-			}, 400)
+	// 		timer = setTimeout(function () {
+	// 			window.scene = new Scene()
+	// 			canvaEl.style.filter = 'blur(0px)'
+	// 		}, 400)
 
-		})
-	},
+	// 	})
+	// },
 	mounted() {
 		const route = useRoute()
 		this.cardName = route.params.name
@@ -54,15 +54,15 @@ export default {
 			window.scrollTo(0, element.offsetTop)
 		}, 0)
 
-		setTimeout(() => {
-			window.scene = new Scene()
-			document.querySelector('.canva-card-details').style.display = 'block'
-		}, 2000)
+		// setTimeout(() => {
+		// 	window.scene = new Scene()
+		// 	document.querySelector('.canva-card-details').style.display = 'block'
+		// }, 2000)
 	},
 
-	destroyed() {
-		window.removeEventListener("resize", window.scene = new Scene());
-	},
+	// destroyed() {
+	// 	window.removeEventListener("resize", window.scene = new Scene());
+	// },
 
 	methods: {
 		getData(cardName) {
@@ -128,18 +128,18 @@ export default {
 			</div>
 		</div>
 
-		<!-- <div class="z-10 relative mt-36 rounded-3xl max-w-3xl mx-auto cardDimensions">
-      <img :src="cardImage" :alt="imageAlt" class="w-full h-full rounded-3xl">
-    </div> -->
+		<div class="z-10 relative mt-12 max-w-xl mx-auto cardDimensions">
+			<img :src="cardImage" :alt="imageAlt" class="w-full h-full rounded-3xl">
+		</div>
 
-		<section class="container-three">
+		<!-- <section class="container-three">
 			<article class="tile">
 				<figure class="tile__figure">
 					<img :src="cardImage" :data-hover="cardImageHover" class="tile__image" alt="My image" />
 				</figure>
 			</article>
 		</section>
-		<canvas id="stage" class="canva-card-details"></canvas>
+		<canvas id="stage" class="canva-card-details"></canvas> -->
 
 
 		<footer class="mt-40 w-full flex justify-between">
@@ -170,16 +170,10 @@ export default {
   
 <style scoped lang="scss">
 .cardDimensions {
-	width: 100%;
+	width: 90%;
 
 	@media(min-width: 1024px) {
-		width: 460px;
-		height: 651px;
-	}
-
-	@media(min-width: 1380px) {
 		width: 630px;
-		height: 891px;
 	}
 }
 
