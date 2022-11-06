@@ -11,8 +11,7 @@
 		<div class="marquee absolute mt-auto w-full h-full flex items-end text-white overflow-hidden mb-8">
 			<div class="pt-16 border-t border-[#16161C]">
 				<span
-					class="font-[DynaPuff] font-bold text-[160px] w-full whitespace-nowrap text-[#16161C] cursor-default select-none">{{'MB
-					'.repeat(40)}}</span>
+					class="font-[DynaPuff] font-bold text-[160px] w-full whitespace-nowrap text-[#16161C] cursor-default select-none">{{'MB '.repeat(40)}}</span>
 			</div>
 		</div>
 

@@ -2,7 +2,6 @@
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
 
-import Welcome from './components/Welcome.vue'
 import Header from './components/Header.vue'
 import Main from './components/Main.vue'
 import Section from './components/Section.vue'
@@ -10,7 +9,6 @@ import Footer from './components/Footer.vue'
 
 export default {
 	components: {
-		Welcome,
 		Header,
 		Main,
 		Section,
@@ -34,7 +32,6 @@ export default {
 
 <template>
 	<div class="flex flex-col w-full">
-		<Welcome />
 		<Header />
 		<Main />
 		<Section id="sectionComponent" />
