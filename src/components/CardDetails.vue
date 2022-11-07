@@ -6,6 +6,10 @@ import cardEidy from '../assets/card-eidy.jpg'
 import cardAriana from '../assets/card-ariana.jpg'
 import cardRobots from '../assets/card-robots.jpg'
 
+import behanceLogo from '../assets/behanceLogo.svg'
+import instagramLogo from '../assets/instagramLogo.svg'
+import linkedinLogo from '../assets/linkedinLogo.svg'
+
 export default {
 	data() {
 		return {
@@ -13,6 +17,10 @@ export default {
 			cardEidy,
 			cardAriana,
 			cardRobots,
+
+			behanceLogo,
+			instagramLogo,
+			linkedinLogo,
 
 			cardName: '',
 			title: '',
@@ -107,28 +115,31 @@ export default {
 			<img :src="cardImage" :alt="imageAlt" class="w-full h-full rounded-3xl">
 		</div>
 
-		<footer class="mt-40 w-full flex justify-between">
-			<div class="flex flex-col">
-				<h6>Redes sociais</h6>
-				<ul>
-					<li>Instagram</li>
-					<li>Behance</li>
-				</ul>
-			</div>
+		<div class="mt-6">
+			<span>© MIGUEL BANDOCH, TODOS OS DIREITOS RESERVADOS</span>
+		</div>
 
-			<div>
-				<span>© MIGUEL BANDOCH, TODOS OS DIREITOS RESERVADOS</span>
-			</div>
+		<footer class="mt-20 mb-4 w-full flex justify-center">
+			<ul class="flex gap-3">
+				<li>
+					<a href="https://www.behance.net/miguelbandoch" target="_blank" rel="noopener noreferrer">
+						<img :src="behanceLogo" alt="behance-logo" class="w-[36px]">
+					</a>
+				</li>
 
-			<div>
-				<h6>E-mail</h6>
-				<span>email@gmail.com</span>
+				<li>
+					<a href="https://www.linkedin.com/in/miguel-bandoch-7269a518a/" target="_blank" rel="noopener noreferrer">
+						<img :src="linkedinLogo" alt="linkedin-logo" class="w-[32px]">
+					</a>
+				</li>
 
-				<h6>Link</h6>
-				<a href="" class="inline">{{ cardName }}</a>
-			</div>
+				<li>
+					<a href="https://www.instagram.com/bandochh/" target="_blank" rel="noopener noreferrer">
+						<img :src="instagramLogo" alt="instagram-logo" class="w-[36px]">
+					</a>
+				</li>
+			</ul>
 		</footer>
-
 	</div>
 </template>
   
@@ -140,6 +151,17 @@ export default {
 	@media(min-width: 1024px) {
 		width: 630px;
 	}
+}
+
+ul {
+	img {
+        filter: invert(100%) sepia(0%) saturate(7485%) hue-rotate(244deg) brightness(103%) contrast(92%);
+		transition: all 0.3s ease;
+
+		&:hover {
+        transform: translateY(-4px);
+      }
+    }
 }
 
 </style>

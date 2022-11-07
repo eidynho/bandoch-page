@@ -55,11 +55,11 @@ export default {
                         <a href="https://www.behance.net/miguelbandoch" target="_blank" rel="noopener noreferrer">/miguelbandoch</a>
                     </div>
                     <div class="flex items-center gap-3">
-                        <img :src="linkedinLogo" alt="linkedin-logo" class="w-[28px]">
+                        <img :src="linkedinLogo" alt="linkedin-logo" class="w-[26px]">
                         <a href="https://www.linkedin.com/in/miguel-bandoch-7269a518a/" target="_blank" rel="noopener noreferrer">/miguelbandoch</a>
                     </div>
                     <div class="flex items-center gap-3">
-                        <img :src="instagramLogo" alt="instagram-logo" class="w-[28px]">
+                        <img :src="instagramLogo" alt="instagram-logo" class="w-[26px]">
                         <a href="https://www.instagram.com/bandochh/" target="_blank" rel="noopener noreferrer">/bandochh</a>
                     </div>
                 </div>
